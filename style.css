@@ -1,0 +1,52 @@
+:root {
+  --cube-side: 20vmin;
+  --dot-side: calc(var(--cube-side) / 5);
+}
+.conteiner {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.cube {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  width: var(--cube-side);
+  height: var(--cube-side);
+  border-radius: 20%;
+  border: 1vmin solid black;
+  margin: 1%;
+  padding: 1%;
+}
+
+.dot {
+    width: var(--dot-side);
+    height: var(--dot-side);
+    border-radius: 50%;
+    background-color: black;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.flex-start {
+    justify-content: flex-start;
+}
+
+.flex-end {
+    justify-content: flex-end;
+}
+
+.aling-content {
+    align-content: center;
+}
+
+
